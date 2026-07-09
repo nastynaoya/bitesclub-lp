@@ -142,6 +142,52 @@ p + p { margin-top: 1.4em; }
   margin-bottom: 6px;
 }
 
+/* Guests */
+.guest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 8px;
+}
+.guest {
+  border: 1px solid var(--line);
+  padding: 34px 30px;
+  background: var(--paper);
+}
+.guest .role {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 14px;
+}
+.guest .name {
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.guest .affil {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.guest .desc {
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+.guest-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 18px;
+}
+@media (max-width: 560px) {
+  .guest-grid { grid-template-columns: 1fr; }
+}
+
 /* Overview table */
 dl.overview { border-top: 1px solid var(--line); }
 dl.overview div {
@@ -282,6 +328,7 @@ footer a { color: var(--muted); }
     <nav>
       <a href="#about">About</a>
       <a href="#theme">Theme</a>
+      <a href="#guests">Guests</a>
       <a href="#overview">Info</a>
       <a href="#tickets">Tickets</a>
     </nav>
@@ -321,8 +368,30 @@ footer a { color: var(--muted); }
     <div class="host-note">
       <span class="label">HOST</span>
       <strong>NOSE knows</strong>（香りのポッドキャスト）<br>
-      <span style="font-size: 0.85rem; color: #a89f95;">ゲスト: 近日発表</span>
+      <span style="font-size: 0.85rem; color: #a89f95;">ゲスト: 水野太貴 × 平野紗季子</span>
     </div>
+  </div>
+</section>
+
+<section id="guests">
+  <div class="wrap">
+    <span class="en sec-label">Guests</span>
+    <h2>この夜の、話し手。</h2>
+    <div class="guest-grid">
+      <div class="guest">
+        <span class="role">Guest</span>
+        <div class="name">水野太貴</div>
+        <div class="affil">ゆる言語学ラジオ</div>
+        <p class="desc">身近な現象を言語の視点で解きほぐし、聴く人の解像度を一段上げる語り手。日本語にほとんど固有の語彙がない「匂い」を、それでも言葉にする夜の推進力。</p>
+      </div>
+      <div class="guest">
+        <span class="role">Guest</span>
+        <div class="name">平野紗季子</div>
+        <div class="affil">フードエッセイスト／「味な副音声」</div>
+        <p class="desc">食べたものを「おいしい」で終わらせず、記憶や違和感ごと言葉にしてきた、食を語ることの最前線。皿の上と言葉のあいだを、誰よりも自由に行き来する。</p>
+      </div>
+    </div>
+    <p class="guest-note">ホスト: NOSE knows（香りのポッドキャスト）／ 出演者・内容は変更になる場合があります。</p>
   </div>
 </section>
 
@@ -336,7 +405,7 @@ footer a { color: var(--muted); }
       <div><dt>日時</dt><dd>2026年9月11日（金）20:00–22:00 <span class="note">（開場19:30予定）</span></dd></div>
       <div><dt>会場</dt><dd>Common cafe &amp; music bar lounge<span class="note">（東京・六本木）</span></dd></div>
       <div><dt>ホスト</dt><dd>NOSE knows（香りのポッドキャスト）</dd></div>
-      <div><dt>ゲスト</dt><dd>近日発表</dd></div>
+      <div><dt>ゲスト</dt><dd>水野太貴（ゆる言語学ラジオ）／ 平野紗季子（フードエッセイスト・「味な副音声」）</dd></div>
       <div><dt>定員</dt><dd>来場50名／オンライン配信100名</dd></div>
       <div><dt>主催</dt><dd>株式会社FUBI</dd></div>
     </dl>
